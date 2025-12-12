@@ -1,7 +1,7 @@
 # entropy_experiment
 "Does having uncertainty in the output distribution of language models indicate poorer performance on benchmarks?" 
 
-Experimentation is constrained in this setting. I have not implemented other (possibly more enlightening) benchmarks; More crucially, ones unpertaining to multiple-choice formatted datasets. This project was primarily a sanity check. What I have gleaned, however, is that entropy (shannon entropy) is not entirely indicative of worse performance.
+To put it bluntly, this project evaluates a model's shannon entropy (as a proxy for "uncertainty") on three different benchmarks: 1) ARC-Easy/Challenge 2) MMLU 3) HellaSwag. Perplexity is a direct extension of the loss (exponentiated cross entropy) and is not fit for my scenario. The experimentation done in this repository is relatively shallow as I have not implemented other (possibly more enlightening) benchmarks that are not formatted as multiple-choice questions. This project was mainly a sanity check. What this does prove however, is that entropy (shannon entropy) is not entirely indicative of worse performance.
 
 1) ```conda create --name entropy_exp python=3.12.2```
 2) ```conda activate entropy_exp```
